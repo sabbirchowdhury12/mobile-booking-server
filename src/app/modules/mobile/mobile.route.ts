@@ -1,7 +1,8 @@
-// import express from "express";
+import express from "express";
+import { mobileController } from "./mobile.controller";
 
-// const router = express.Router();
+const router = express.Router();
 
-// router.get("/", MobileController.getAllMobile);
+router.get("/", mobileController.getAllData);
 
-// export const mobileRouter = router;
+export const mobileRouter = router;
